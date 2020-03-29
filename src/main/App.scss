@@ -1,0 +1,25 @@
+@import '../assets/variables';
+body {
+  font-family: $font-family;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  .app-description {
+    margin: 110px auto 0;
+    h1 {
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
+  .calculator {
+    box-shadow: 3px 3px 6px rgba($black, 0.3);
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 40px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 60px 60px 60px 60px 60px;
+  }
+}

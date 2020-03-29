@@ -1,0 +1,14 @@
+@import '../assets/variables';
+
+.display {
+  font-size: 40px;
+  grid-column: span 4;
+  background: $theme-color;
+  color: $white;
+  height: 60px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

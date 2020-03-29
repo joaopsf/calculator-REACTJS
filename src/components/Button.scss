@@ -1,0 +1,32 @@
+@import '../assets/variables';
+
+.button {
+  font-family: $font-family;
+  font-size: 20px;
+  background: $background-calculator;
+  border: solid .2px $border-calculator;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background: $background-calculator-hover;
+  }
+  &:active {
+    background: $theme-color-light;
+    border: solid .2px $theme-color-light;
+    color: $white;
+  }
+  &.double {
+    grid-column: span 2;
+  }
+  &.triple {
+    grid-column: span 3;
+  }
+  &.operation {
+    background: $button-operation;
+    border: solid .2px $border-operation;
+    color: $white;
+    &:hover, &.active {
+      background: $button-operation-hover;
+    }
+  }
+}
